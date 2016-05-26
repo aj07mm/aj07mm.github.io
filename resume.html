@@ -37,6 +37,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -64,15 +65,21 @@
       width:100%;
     }
     #resume-description h3 {
-      border-bottom: 1px solid #000;
+      color: gainsboro;
+      font-weight: bold;
+      border-bottom: 1px solid gainsboro;
       width:100%;
     }
     #resume-description h4 {
-      border-bottom: 1px solid #000;
+      color: gainsboro;
+      font-weight: bold;
+      border-bottom: 1px solid gainsboro;
       width:100%;
     }
     #resume-description h5 {
-      border-bottom: 1px solid #000;
+      color: gainsboro;
+      font-weight: bold;
+      border-bottom: 1px solid gainsboro;
       width:100%;
     }
     #avatar-pic {
@@ -80,6 +87,19 @@
       height: 230px;
       borde-radius: 5px;
     }
+    .spoken-language {
+      width: 100px;
+      display: inline-block;
+    }
+    .contract-info {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    meter {
+      width: 100%;
+    }
+
   </style>
 </head>
 <body>
@@ -89,10 +109,10 @@
     <nav class="row">
       <div class="seven column">
         <ul class="inline right">
-          <li><a href="https://www.linkedin.com/in/julio-antonio-mendonça-de-marins-15635859">Linkedin</a></li>
-          <li><a href="https://github.com/aj07mm">Github</a></li>
-          <li><a href="https://stackoverflow.com/users/2172260/julio-marins">StackOverflow</a></li>
-          <li><a href="https://soundcloud.com/aj07mm">SoundCloud</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
     </nav>
@@ -100,14 +120,21 @@
       <div class="row">
         
         <div class="one-third column">
-          <img id="avatar-pic" src="https://avatars1.githubusercontent.com/u/3050129?v=3&s=460">
+          <img id="avatar-pic" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKMAAAAJDlhZGU0NzM0LWJiZDctNDU0YS1hOGQyLTczNzEwMWU5N2FkZg.jpg">
         </div>
         <div class="two-thirds column">
-          <h1>Julio Marins</h1>
-          <h2>Fullstack developer</h2>
-          EMAIL: aj07mm@hotmail.com
+          <h3><b>Julio Marins</b></h3>
+          <h4>Fullstack developer</h4>
           <br>
-          SKYPE: aj07mm
+          <b><i class="fa fa-linkedin" aria-hidden="true"></i>
+</b></b> http://bit.ly/1TG9j3N
+          <br>
+          <b><i class="fa fa-github" aria-hidden="true"></i>
+</b> https://github.com/aj07mm
+          <br>
+          <b><i class="fa fa-inbox" aria-hidden="true"></i></b> aj07mm@hotmail.com
+          <br>
+          <b><i class="fa fa-skype" aria-hidden="true"></i></b> aj07mm
         </div>
       </div>
     </header>
@@ -117,39 +144,166 @@
     <div id="resume-description" class="row">
       <div class="six columns">
         <div>
-          <h1>About Me</h1>
+          <h3>About Me</h3>
           <p>
-            Hi! I am a generalist programmer,
+            Hi! I am a generalist programmer.
             I help distributed teams build solid products with any language or technology.
-            Open to everything, feel free to ask ;)
+            Open to everything, feel free to ask.
           </p>
         </div>
         <div>
-          <h1>Skills</h1>
+          <h3>Skills</h3>
 
           <h4>Front-end Development</h4>
-          <p>HTML5, CSS3, Javascript</p>
+          <b>languages and markups</b>
+          <p>HTML, CSS, Javascript</p>
+          <b>frameworks</b>
+          <p>VanillaJS, JQuery, AngularJS, MeteorJS, Ionic, D3, Highcharts, RequireJS, Mocha, Jasmine, Protractor, ...<p>
 
           <h4>Back-end Development</h4>
-          <p>Python, Nodejs, PHP, Ruby</p>
+
+          <b>languages</b>
+          <p>Python, NodeJS, PHP, Ruby</p>
+          <b>frameworks</b>
+          <p>Django, Django REST Framework, Flask, Falcon, ExpressJS, Rails, Yii, ...</p>
 
           <h4>Databases</h4>
-          <p>Postgre, MySQL, MongoDB, RethinkDB, OracleSQL</p>
+          <p>PostgreSQL, MySQL, OracleSQL, MongoDB, RethinkDB, Redis</p>
 
-          <h4>Mobile</h4>
-          <p>Ionic and MeteorJS</p>
+          <h4>DevOps</h4>
+          <p>Bash, Git, SVN, SSH, Apache, NGINX, working mainly with GNU/Linux environments</p>
+
+          <h4>Miscellaneous</h4>
+          <p>SCRUM, TDD, E2E and Integration testing</p>
+
         </div>
-        
-        <h1>Languages</h1>
+
+        <div>
+          <h3>Spoken Languages</h3>
+          
+          <span class="spoken-language">Portuguese </span> <meter value="1"></meter>
+          </br>
+          <span class="spoken-language">English </span> <meter value=".9"></meter>
+          </br>
+          <span class="spoken-language">Spanish </span> <meter value=".5"></meter>
+        </div>
+
       </div>
       <div class="six columns">
-        <h1>Education</h1>
+        <h3>Education</h3>
+
+        <span class="contract-info">
+            <span class="left"></span>
+            <span class="right">2009 – 2013</span>
+        </span>
+
         <p>
           Centro Federal de Educação Tecnológica Celso Suckow da Fonseca
-          Técnico em programação, Computer Programming/Programmer, General
-          2009 – 2013
+          Software Development, Computer Programming/Programmer, General.
         </p>
-        <h1>Experiences</h1>
+        <h3>Experiences</h3>
+
+        <p>
+          <h5>Developer</h5>
+          <h5>Órama Financeira</h5>
+
+          <span class="contract-info">
+            <span class="left">Brazil</span>
+            <span class="right">April 2016</span>
+          </span>
+
+          Contracted as a Fullstack developer using Python with Django and Angularjs based on components, tests with Jasmine and Protractor. Database MySQL.
+          </br>
+          </br>
+          I am currently developing a stock market application for clients and brokers to invest in funds and papers
+
+        </p>
+
+        <p>
+          <h5>Developer</h5>
+          <h5>Altitude Co.</h5>
+
+          <span class="contract-info">
+            <span class="left">USA</span>
+            <span class="right">march 2015 – august 2015</span>
+          </span>
+
+          Contracted as a Backend developer using Python with Falcon and Flask frameworks, tests with Runscope. Database Rethinkdb, server Gunicorn and Nginx.
+          </br>
+          </br>
+          I worked developing a API to communicate with sensors in buildings monitoring events and also a dashboard to show all the data
+
+        </p>
+
+
+        <p>
+          <h5>Lead Developer</h5>
+          <h5>Quadri Systems</h5>
+
+          <span class="contract-info">
+            <span class="left">Brazil</span>
+            <span class="right">january 2015 – june 2015</span>
+          </span>
+
+          Contracted as a Fullstack developer working mainly with javascript using frameworks such as Meteor.js, Express, Angular.js and NoSQL databases.
+          </br>
+          </br>
+          There was 2 main projects I've developed there from scratch and by myself:
+          </br>
+          </br>
+          <ul>
+            <li>A realtime e-commerce using Meteor.js to sell buses, with also the possibility to do auctions.</li>
+            <li>A mobile app using Ionic framework and also a website to monitor buses around the city of Macaé/RJ. For this project I used a MEAN Stack architecture consuming both the website and the mobile app from the same API using Express.js</li>
+          </ul>
+
+        </p>
+
+        <p>
+          <h5>Developer</h5>
+          <h5>ShowApp - Hoy Plan</h5>
+
+          <span class="contract-info">
+            <span class="left">Argentina</span>
+            <span class="right">dezember 2014 – january 2015</span>
+          </span>
+
+          Contracted as a Full Stack Developer working with PHP and Python. Database PostgreSQL
+          </br>
+          </br>
+          I worked by myself restructuring all the layout to a responsive one, added some new features, updated database schema and improved the code by refactoring some bits and pieces
+
+        </p>
+
+        <p>
+          <h5>System Analyst</h5>
+          <h5>e-novasys</h5>
+
+          <span class="contract-info">
+            <span class="left">Brazil</span>
+            <span class="right">April 2014 – November 2014</span>
+          </span>
+
+          Employed as a Developer focused on DBA, working at Business Inteligence team at Lojas Americanas with PHP and MySQL, developing applications for decision making.
+          </br>
+          </br>
+          All applications I've developed and helped improve were internal ones. They focused on monitoring the flow of products in the whole chain of Lojas Americanas in Brazil. We did all kinds of data analysis and showed them in dashboards with charts and search engines. I learned a lot about database there, using MySQL and OracleSQL. I also did maintenance of infra on a database level and worked making routines with shell script
+        </p>
+
+        <p>
+          <h5>Intern</h5>
+          <h5>Target Solutions - Brasil</h5>
+          <span class="contract-info">
+            <span class="left">Brazil</span>
+            <span class="right">April 2013 – November 2013</span>
+          </span>
+
+          Full Stack PHP Developer, working with Yii Framework. Database MySQL
+          </br>
+          </br>
+          This was my first experience working as a developer. I joined in a team of 2 developers, working on an application to organize lines in restaurants and fast foods using a mobile app and a web application
+
+        </p>
+
       </div>
     </div>
   </div>
